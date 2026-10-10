@@ -1,0 +1,47 @@
+{
+	"geode": "5.11.1",
+	"gd": "*",
+	"id": "tunombre.gravity-safe",
+	"name": "Gravity Safe",
+	"version": "v1.1.0",
+	"developer": "TuNombre",
+	"description": "Modo Safe + Auto Safe mejorado (gravedad y velocidad) + gravedad personalizada con panel en la pausa.",
+	"tags": [
+		"gameplay",
+		"utility",
+		"interface"
+	],
+	"settings": {
+		"safe-mode": {
+			"type": "bool",
+			"name": "Modo Safe",
+			"description": "El progreso y las victorias no se guardan mientras esta activo.",
+			"default": false
+		},
+		"auto-safe": {
+			"type": "bool",
+			"name": "Auto Safe mejorado",
+			"description": "Activa Safe automaticamente si cambias la gravedad o la velocidad del juego.",
+			"default": true
+		},
+		"gravity-enabled": {
+			"type": "bool",
+			"name": "Gravedad personalizada",
+			"description": "Usa el valor de gravedad de abajo.",
+			"default": false
+		},
+		"gravity": {
+			"type": "float",
+			"name": "Gravedad",
+			"description": "Multiplicador de gravedad (1.0 = normal, 0.50 = mitad).",
+			"default": 1.0,
+			"min": 0.01,
+			"max": 5.0,
+			"control": {
+				"input": true,
+				"slider": true,
+				"arrows": true
+			}
+		}
+	}
+}
